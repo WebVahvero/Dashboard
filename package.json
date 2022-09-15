@@ -1,0 +1,23 @@
+{
+  "name": "dashboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebVahvero/Dashboard.git"
+  },
+  "author": "Valtteri Kurunsaari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WebVahvero/Dashboard/issues"
+  },
+  "homepage": "https://github.com/WebVahvero/Dashboard#readme",
+  "dependencies": {
+    "dompurify": "^2.4.0",
+    "marked": "^4.1.0"
+  }
+}

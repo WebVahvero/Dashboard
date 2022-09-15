@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://kit.fontawesome.com/b624cfda5b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script defer type="text/javascript" src="./index.js"></script>
+    <script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.4.0/purify.min.js" integrity="sha512-/hVAZO5POxCKdZMSLefw30xEVwjm94PAV9ynjskGbIpBvHO9EBplEcdUlBdCKutpZsF+La8Ag4gNrG0gAOn3Ig==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <nav>
+        <h1 class="sitetitle"> <i class="fa-regular fa-clipboard"></i> Dashboard</h1>
+        <ul>
+            <li><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="#"><i class="fa-solid fa-user"></i> Profile</a></li>
+            <li><a href="#"><i class="fa-solid fa-message"></i> Messages</a></li>
+            <li><a href="#"><i class="fa-solid fa-clock-rotate-left"></i> History</a></li>
+            <li><a href="#"><i class="fa-solid fa-list-check"></i> Tasks</a></li>
+            <li><a href="#"><i class="fa-solid fa-people-group"></i> Community</a></li>
+        </ul>
+        <ul>
+            <li><a href="#"><i class="fa-solid fa-gears"></i> Settinggs</a></li>
+            <li><a href="#"><i class="fa-solid fa-headset"></i> Support</a></li>
+            <li><a href="#"><i class="fa-solid fa-lock"></i> Privacy</a></li>
+        </ul>
+    </nav>
+    <main>
+        <header>
+            <section class="header-top">
+                <div class="src-wrapper">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input id="srcBar" type="text" placeholder="Search By Project Name...">
+                </div>
+            </section>
+            <section class="header-bottom">
+                <figure>
+                    <img src="./img/cat.jpeg" alt="Profile Picture">
+                    <figcaption>
+                        <p><small>Hi there,</small></p>
+                        <p><strong>Valtteri (@WebVahvero)</strong></p>
+                    </figcaption>
+                </figure>
+                <div class="social">
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-codepen"></i></a>
+                </div>
+            </section>
+        </header>
+        <section class="main-content">
+            <div class="projects">
+                <h2 class="title">Projects</h2>
+                <div id="repo-container"></div>
+            </div>
+            <aside>
+                <div class="info-wrapper">
+                    <h2 class="title">Info</h2>
+                    <div class="info-block">
+                        <div class="info-text">
+                            <h3 class="info-title">Info 1</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe sunt aspernatur quam repellendus. Architecto, repellat. Iste deserunt magnam expedita asperiores? Iusto totam molestias ratione animi doloremque sunt, enim illo?</p>
+                        </div>
+                        <hr>
+                        <div class="info-text">
+                            <h3 class="info-title">Info 2</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe sunt aspernatur quam repellendus. Architecto, repellat. Iste deserunt magnam expedita asperiores? Iusto totam molestias ratione animi doloremque sunt, enim illo?</p>
+                        </div>
+                        <hr>
+                        <div class="info-text">
+                            <h3 class="info-title">Info 3</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe sunt aspernatur quam repellendus. Architecto, repellat. Iste deserunt magnam expedita asperiores? Iusto totam molestias ratione animi doloremque sunt, enim illo?</p>
+                        </div>         
+                    </div>
+                </div>
+                <div class="friends-wrapper">
+                    <h2 class="title">Friends</h2>
+                    <div class="friends-block">
+                        <div class="friend-item">
+                            <img src="./img/julle.jpeg" alt="Profile Picture">
+                            <a href="#">julmezha</a>
+                        </div>
+                        <div class="friend-item">
+                            <img src="./img/kimi.jpeg" alt="Profile Picture">
+                            <a href="#">KimiWeb</a>
+                        </div>
+                        <div class="friend-item">
+                            <img src="./img/jimi.png" alt="Profile Picture">
+                            <a href="">JimiPuu</a>
+                        </div>
+                        <div class="friend-item">
+                            <img src="./img/micke.jpeg" alt="Profile Picture">
+                            <a href="#">Mickemoi</a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </section>
+    </main>
+</body>
+</html>

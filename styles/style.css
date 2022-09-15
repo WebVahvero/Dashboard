@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+:root {
+  --link-color: black;
+  --link-hover-color: red;
+  --nav-bg-color: salmon;
+  --header-bg-color: lightblue;
+  --main-bg-color: lightgreen;
+  --input-border-color: blue;
+  --card-bg-color: whitesmoke;
+  --transition-start-time: 500ms;
+  --transition-end-time: 200ms;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+  text-decoration: none;
+}
+
+a {
+  color: var(--link-color);
+  font-size: 1.2rem;
+  transition: var(--transition-start-time);
+}
+
+a:hover {
+  color: var(--link-hover-color);
+  transition: var(--transition-end-time);
+}
+
+html {
+  font-size: 18px;
+}
+html body {
+  display: grid;
+  grid-template-columns: auto 2fr;
+}
+html body nav {
+  padding: 20px;
+  background-color: var(--nav-bg-color);
+}
+html body nav h1 {
+  font-size: 1.4rem;
+}
+html body nav ul {
+  margin-top: 100px;
+  padding-left: 10px;
+}
+html body nav ul li {
+  list-style: none;
+  margin-top: 10px;
+}
+html body header {
+  padding: 20px 80px;
+  background-color: var(--header-bg-color);
+}
+html body header .header-top {
+  margin-bottom: 30px;
+  display: flex;
+  width: 100%;
+}
+html body header .header-top i {
+  font-size: 1.5rem;
+  margin-right: 5px;
+}
+html body header .header-top input {
+  padding: 10px;
+  border: 2px solid var(--input-border-color);
+  border-radius: 10px;
+  font-size: 1rem;
+  width: 550px;
+}
+html body header .header-top input:focus {
+  border: 2px solid var(--input-border-color);
+}
+html body header .header-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+html body header .header-bottom figure {
+  display: flex;
+  align-items: center;
+}
+html body header .header-bottom figure img {
+  width: 130px;
+  height: auto;
+  border-radius: 50%;
+}
+html body header .header-bottom figure figcaption {
+  margin-left: 15px;
+  font-size: 2rem;
+}
+html body header .header-bottom .social a {
+  font-size: 2rem;
+  margin: 0 10px;
+}
+html body .main-content {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  background-color: var(--main-bg-color);
+}
+html body .main-content .projects {
+  padding: 20px;
+}
+html body .main-content .projects h2 {
+  margin: 20px 0;
+}
+html body .main-content .projects #repo-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+html body .main-content .projects #repo-container .repo {
+  background-color: var(--card-bg-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+html body .main-content .projects #repo-container .repo li {
+  font-size: 1rem;
+  padding-left: 20px;
+  list-style-position: inside;
+}
+html body .main-content .projects #repo-container .repo a {
+  font-size: 1rem;
+}
+html body .main-content aside {
+  padding: 20px;
+}
+html body .main-content aside .info-wrapper h2 {
+  margin: 20px 0;
+}
+html body .main-content aside .info-wrapper .info-block {
+  background-color: var(--card-bg-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+html body .main-content aside .info-wrapper .info-block .info-text {
+  margin: 10px 0;
+}
+html body .main-content aside .friends-wrapper h2 {
+  padding: 50px 0 10px 0;
+}
+html body .main-content aside .friends-wrapper .friends-block {
+  background-color: var(--card-bg-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+html body .main-content aside .friends-wrapper .friends-block .friend-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 0 0 20px;
+}
+html body .main-content aside .friends-wrapper .friends-block .friend-item img {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+}
+html body .main-content aside .friends-wrapper .friends-block .friend-item a {
+  margin-left: 10px;
+  font-weight: bold;
+}/*# sourceMappingURL=style.css.map */
